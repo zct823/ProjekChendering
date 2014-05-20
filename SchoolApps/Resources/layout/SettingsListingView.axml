@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/CustomSelector">
+    <ImageView
+        android:id="@+id/ivSettingsIcon"
+        android:padding="5dp"
+        android:src="@drawable/icon"
+        android:layout_width="54.8dp"
+        android:layout_height="47.0dp" />
+    <LinearLayout
+        android:id="@+id/Text"
+        android:orientation="vertical"
+        android:layout_width="194.1dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="7.5dp">
+        <TextView
+            android:id="@+id/tvSettingsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:textSize="20dip"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/tvSettingsSubname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:textColor="#FF267F00"
+            android:paddingLeft="100dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DD01A3B-C2EE-4C8F-8158-E2DC36C858FC}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SchoolApps</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>SchoolApps</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Downloads\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="SQLite">
+      <HintPath>..\Components\sqlite-net-1.0.1\lib\android\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="GcmService.cs" />
+    <Compile Include="..\SchoolApps.GTKCoreLib\Webservice.cs">
+      <Link>Webservice.cs</Link>
+    </Compile>
+    <Compile Include="MyActionBarDrawerToggle.cs">
+      <DependentUpon>MainMenuDrawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFragment.cs" />
+    <Compile Include="MainMenuDrawer.cs" />
+    <Compile Include="MessageAdapters.cs">
+      <DependentUpon>MessagesFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesFragment.cs" />
+    <Compile Include="TableItem.cs">
+      <DependentUpon>MessagesFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileFragment.cs" />
+    <Compile Include="FeedbackFragment.cs" />
+    <Compile Include="SchoolInfoFragment.cs" />
+    <Compile Include="FeedbackForm.cs">
+      <DependentUpon>FeedbackFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsFragment.cs" />
+    <Compile Include="SettingsAdapter.cs">
+      <DependentUpon>SettingsFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsItem.cs">
+      <DependentUpon>SettingsFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MMDDelegatedMenuItemListener.cs">
+      <DependentUpon>MainMenuDrawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralMsgAdapter.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralMsgItem.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\SchoolApps.GTKCoreLib\DatabaseAccess.cs">
+      <Link>DatabaseAccess.cs</Link>
+    </Compile>
+    <Compile Include="MessageAdapter.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageItem.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsAdapter.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsItem.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenMsgContantDetails.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntranceToMain.cs" />
+    <Compile Include="PrivMsgContentDetails.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsContentDetails.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUserRegistration.cs">
+      <DependentUpon>MainActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginResetPass.cs">
+      <DependentUpon>MainActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComposeMsgActivity.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComposeMsgAddressee.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComposeMsgAddresseeItems.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsResetPassActivity.cs">
+      <DependentUpon>SettingsFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlyOutContainer.cs" />
+    <Compile Include="LeftMenuDrawerAdapter.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeftMenuDrawerItems.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesActivity.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileActivity.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolInfoActivity.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsActivity.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackActivity.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\schoolapp_logo.png" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_other.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_search.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_other.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\action_other.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\action_search.png" />
+    <AndroidResource Include="Resources\layout\LeftMenu.axml">
+      <DependentUpon>MainContainer.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Menuicon1.png" />
+    <AndroidResource Include="Resources\drawable\Woodgrove.gif" />
+    <AndroidResource Include="Resources\drawable\u13_normal.png" />
+    <AndroidResource Include="Resources\drawable\u31_normal.png" />
+    <AndroidResource Include="Resources\drawable\u39_normal.png" />
+    <AndroidResource Include="Resources\drawable\u12_normal.jpg" />
+    <AndroidResource Include="Resources\drawable\u14_normal.jpg" />
+    <AndroidResource Include="Resources\drawable\u20_normal.jpg" />
+    <AndroidResource Include="Resources\layout\MainContainer.axml" />
+    <AndroidResource Include="Resources\layout\DrawerListItem.axml">
+      <DependentUpon>Main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\MessageLayout.axml" />
+    <AndroidResource Include="Resources\layout\CustomMessageView.axml">
+      <DependentUpon>MessageLayout.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\CustomSelector.xml" />
+    <AndroidResource Include="Resources\layout\ProfileLayout.axml" />
+    <AndroidResource Include="Resources\layout\FeedbackLayout.axml" />
+    <AndroidResource Include="Resources\layout\SchoolInfoLayout.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout\FeedbackFormLayout.axml">
+      <DependentUpon>FeedbackLayout.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\BorderLines.xml" />
+    <AndroidResource Include="Resources\layout\SettingsListingView.axml">
+      <DependentUpon>SettingsLayout.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SettingsLayout.axml" />
+    <AndroidResource Include="Resources\drawable\ab_background_textured_schoolapp.xml" />
+    <AndroidResource Include="Resources\drawable\btn_cab_done_schoolapp.xml" />
+    <AndroidResource Include="Resources\drawable\progress_horizontal_schoolapp.xml" />
+    <AndroidResource Include="Resources\drawable\selectable_background_schoolapp.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_background_ab_schoolapp.xml" />
+    <AndroidResource Include="Resources\drawable\tab_indicator_ab_schoolapp.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_bottom_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_stacked_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_texture_tile_schoolapp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_transparent_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cab_background_bottom_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cab_background_top_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_dropdown_panel_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_bg_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_primary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_secondary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_disabled_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_bottom_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_stacked_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_texture_tile_schoolapp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_transparent_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cab_background_bottom_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cab_background_top_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_dropdown_panel_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_bg_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_primary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_secondary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_disabled_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_bottom_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_stacked_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_texture_tile_schoolapp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_transparent_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cab_background_bottom_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cab_background_top_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_dropdown_panel_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_bg_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_primary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_secondary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_disabled_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_bottom_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_stacked_solid_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_texture_tile_schoolapp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_transparent_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cab_background_bottom_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cab_background_top_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\list_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\list_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_dropdown_panel_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_bg_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_primary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_secondary_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_default_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_disabled_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_focused_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_pressed_schoolapp.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_schoolapp.9.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\layout\GeneralMsgListView.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MainMenuLL.axml" />
+    <AndroidResource Include="Resources\drawable\facebookDP.jpg" />
+    <AndroidResource Include="Resources\layout\MessageListView.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\layout\EventsListView.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ViewGeneralMsgContent.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EntranceLoadingIndicator.axml">
+      <DependentUpon>Login.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ViewPrivateMsgContent.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ViewEventsInfoContent.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ReadMoreLayout.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LoginRegLayout.axml">
+      <DependentUpon>Login.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LoginResetPass.axml">
+      <DependentUpon>Login.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ReadMorePMLayout.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ComposeMsgLayout.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ComposeMsgAddresseeCell.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ComposeMsgAddresseeListView.axml">
+      <DependentUpon>MainMenuLL.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SettingsResetPass.axml">
+      <DependentUpon>SettingsLayout.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MainMenuFOC.axml">
+      <DependentUpon>MainContainer.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\action_menu.png" />
+    <AndroidResource Include="Resources\layout\LeftMenuListViewCell.axml">
+      <DependentUpon>Main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LeftMenuListView.axml">
+      <DependentUpon>Main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_list_feedback.png" />
+    <AndroidResource Include="Resources\drawable\ic_list_info.png" />
+    <AndroidResource Include="Resources\drawable\ic_list_news.png" />
+    <AndroidResource Include="Resources\drawable\ic_list_profile.png" />
+    <AndroidResource Include="Resources\drawable\ic_list_setting.png" />
+    <AndroidResource Include="Resources\layout\LeftMenuHeaderLayout.axml">
+      <DependentUpon>Main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Logo_Menu.png" />
+    <AndroidResource Include="Resources\drawable\CustomSelectorForLeftMenu.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_drawer_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_drawer_white.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Downloads\GCM.Client-master\Gcm.Client\Gcm.Client.csproj">
+      <Project>{D8830D3D-13F5-423F-9E98-54E9CE215430}</Project>
+      <Name>Gcm.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="sqlite-net">
+      <Version>1.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

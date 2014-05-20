@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+
+namespace SchoolApps
+{
+	public class ReadMoreAdapter : BaseAdapter
+	{
+		Activity context;
+		string data;
+		public ReadMoreAdapter(Activity context, string data)
+		{
+			this.data = data;
+			this.context = context;
+		}
+		public override long GetItemId(int position)
+		{
+			return position;
+		}
+		public override string GetItem (int position)
+		{
+			return data[position];
+		}
+		public override int Count
+		{
+			get { return data.Count; }
+		}
+		public override View GetView(int position, View convertView, ViewGroup parent)
+		{
+			//var item = eventsItem[position];
+
+			View view = convertView;
+			if (view == null)  // no view to re-use, create new
+				view = context.LayoutInflater.Inflate(Resource.Layout.ReadMoreRow, null);
+			view.FindViewById<TextView>(Resource.Id.tvReadMore).Text = "Read More";
+
+			return view;
+		}
+	}
+}
+

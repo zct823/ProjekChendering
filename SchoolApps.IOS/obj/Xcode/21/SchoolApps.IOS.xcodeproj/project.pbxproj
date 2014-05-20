@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C722B6D0000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2003380B0000000000000000 /* UIKit.framework */; };
+		3E07CEA00000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198DB3E00000000000000000 /* MapKit.framework */; };
+		133B37380000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CC43D60000000000000000 /* Foundation.framework */; };
+		6A6198100000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37261F00000000000000000 /* CoreGraphics.framework */; };
+		2E8166750000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 321273130000000000000000 /* Default-568h@2x.png */; };
+		3B4CF0D00000000000000000 /* schoolapp_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 745DBAB00000000000000000 /* schoolapp_logo.png */; };
+		1375332A0000000000000000 /* Root.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17063FC80000000000000000 /* Root.plist */; };
+		FA14B0400000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DEC400000000000000000 /* Info.plist */; };
+		133257A20000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E31D2260000000000000000 /* Entitlements.plist */; };
+		16C364400000000000000000 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA0C5880000000000000000 /* LoginViewController.xib */; };
+		1A5470DE0000000000000000 /* RegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370FB8EA0000000000000000 /* RegisterUserViewController.xib */; };
+		16F6475C0000000000000000 /* ForgotPasswordViewControlelr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337EAC4C0000000000000000 /* ForgotPasswordViewControlelr.xib */; };
+		1A8753FA0000000000000000 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1860980000000000000000 /* HomeViewController.xib */; };
+		313F36400000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = A68EFBC00000000000000000 /* AppDelegate.h */; };
+		6A5000200000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E31E00000000000000000 /* AppDelegate.m */; };
+		A360CA000000000000000000 /* LoginViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 346D68000000000000000000 /* LoginViewController.h */; };
+		DC7193E00000000000000000 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C9E20000000000000000 /* LoginViewController.m */; };
+		115825DC0000000000000000 /* RegisterUserViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 3C24BD440000000000000000 /* RegisterUserViewController.h */; };
+		14E9327A0000000000000000 /* RegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3893B0A60000000000000000 /* RegisterUserViewController.m */; };
+		187A3F180000000000000000 /* ForgotPasswordViewControlelr.h in Sources */ = {isa = PBXBuildFile; fileRef = 3502A4080000000000000000 /* ForgotPasswordViewControlelr.h */; };
+		1C0B4BB60000000000000000 /* ForgotPasswordViewControlelr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3171976A0000000000000000 /* ForgotPasswordViewControlelr.m */; };
+		1F9C58540000000000000000 /* HomeViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 2DE08ACC0000000000000000 /* HomeViewController.h */; };
+		232D64F20000000000000000 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F7E2E0000000000000000 /* HomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26F154AC0000000000000000 /* SchoolApps.IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "SchoolApps.IOS.app"; path = "SchoolApps.IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2003380B0000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		198DB3E00000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		16CC43D60000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		A37261F00000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		321273130000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		745DBAB00000000000000000 /* schoolapp_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "schoolapp_logo.png"; path = "schoolapp_logo.png"; sourceTree = "<group>"; };
+		17063FC80000000000000000 /* Root.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Root.plist"; path = "Settings.bundle/Root.plist"; sourceTree = "<group>"; };
+		1C2DEC400000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		3E31D2260000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		3AA0C5880000000000000000 /* LoginViewController.xib */ = {isa = PBXFileReference; name = "LoginViewController.xib"; path = "LoginViewController.xib"; sourceTree = "<group>"; };
+		370FB8EA0000000000000000 /* RegisterUserViewController.xib */ = {isa = PBXFileReference; name = "RegisterUserViewController.xib"; path = "RegisterUserViewController.xib"; sourceTree = "<group>"; };
+		337EAC4C0000000000000000 /* ForgotPasswordViewControlelr.xib */ = {isa = PBXFileReference; name = "ForgotPasswordViewControlelr.xib"; path = "ForgotPasswordViewControlelr.xib"; sourceTree = "<group>"; };
+		1E1860980000000000000000 /* HomeViewController.xib */ = {isa = PBXFileReference; name = "HomeViewController.xib"; path = "HomeViewController.xib"; sourceTree = "<group>"; };
+		A68EFBC00000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		6D7E31E00000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		346D68000000000000000000 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LoginViewController.h"; path = "LoginViewController.h"; sourceTree = "<group>"; };
+		3FB5C9E20000000000000000 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LoginViewController.m"; path = "LoginViewController.m"; sourceTree = "<group>"; };
+		3C24BD440000000000000000 /* RegisterUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RegisterUserViewController.h"; path = "RegisterUserViewController.h"; sourceTree = "<group>"; };
+		3893B0A60000000000000000 /* RegisterUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "RegisterUserViewController.m"; path = "RegisterUserViewController.m"; sourceTree = "<group>"; };
+		3502A4080000000000000000 /* ForgotPasswordViewControlelr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ForgotPasswordViewControlelr.h"; path = "ForgotPasswordViewControlelr.h"; sourceTree = "<group>"; };
+		3171976A0000000000000000 /* ForgotPasswordViewControlelr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ForgotPasswordViewControlelr.m"; path = "ForgotPasswordViewControlelr.m"; sourceTree = "<group>"; };
+		2DE08ACC0000000000000000 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HomeViewController.h"; path = "HomeViewController.h"; sourceTree = "<group>"; };
+		2A4F7E2E0000000000000000 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "HomeViewController.m"; path = "HomeViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF9FC5A00000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C722B6D0000000000000000 /* UIKit.framework in Frameworks */,
+				3E07CEA00000000000000000 /* MapKit.framework in Frameworks */,
+				133B37380000000000000000 /* Foundation.framework in Frameworks */,
+				6A6198100000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E5AF080000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				D3F41F500000000000000000 /* SchoolApps.IOS */,
+				17F267CF0000000000000000 /* Frameworks */,
+				3298D4E20000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3298D4E20000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26F154AC0000000000000000 /* SchoolApps.IOS.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		17F267CF0000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2003380B0000000000000000 /* UIKit.framework */,
+				198DB3E00000000000000000 /* MapKit.framework */,
+				16CC43D60000000000000000 /* Foundation.framework */,
+				A37261F00000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D3F41F500000000000000000 /* SchoolApps.IOS */ = {
+			isa = PBXGroup;
+			children = (
+				A68EFBC00000000000000000 /* AppDelegate.h */,
+				321273130000000000000000 /* Default-568h@2x.png */,
+				3E31D2260000000000000000 /* Entitlements.plist */,
+				3502A4080000000000000000 /* ForgotPasswordViewControlelr.h */,
+				337EAC4C0000000000000000 /* ForgotPasswordViewControlelr.xib */,
+				2DE08ACC0000000000000000 /* HomeViewController.h */,
+				1E1860980000000000000000 /* HomeViewController.xib */,
+				1C2DEC400000000000000000 /* Info.plist */,
+				346D68000000000000000000 /* LoginViewController.h */,
+				3AA0C5880000000000000000 /* LoginViewController.xib */,
+				3C24BD440000000000000000 /* RegisterUserViewController.h */,
+				370FB8EA0000000000000000 /* RegisterUserViewController.xib */,
+				745DBAB00000000000000000 /* schoolapp_logo.png */,
+				37D8F6410000000000000000 /* Settings.bundle */,
+				127F63540000000000000000 /* Supporting Files */,
+			);
+			name = "SchoolApps.IOS";
+			sourceTree = "<group>";
+		};
+		37D8F6410000000000000000 /* Settings.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				17063FC80000000000000000 /* Root.plist */,
+			);
+			name = "Settings.bundle";
+			sourceTree = "<group>";
+		};
+		127F63540000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D7E31E00000000000000000 /* AppDelegate.m */,
+				3171976A0000000000000000 /* ForgotPasswordViewControlelr.m */,
+				2A4F7E2E0000000000000000 /* HomeViewController.m */,
+				3FB5C9E20000000000000000 /* LoginViewController.m */,
+				3893B0A60000000000000000 /* RegisterUserViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A58DA90000000000000000 /* SchoolApps.IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF209600000000000000000 /* Build configuration list for PBXNativeTarget "SchoolApps.IOS" */;
+			buildPhases = (
+				26BE71900000000000000000 /* Sources */,
+				DF9FC5A00000000000000000 /* Frameworks */,
+				15D188C00000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SchoolApps.IOS";
+			productName = "SchoolApps.IOS";
+			productReference = 26F154AC0000000000000000 /* SchoolApps.IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B4E2AA00000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2D58B3830000000000000000 /* Build configuration list for PBXProject "SchoolApps.IOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27E5AF080000000000000000;
+			productRefGroup = 3298D4E20000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22A58DA90000000000000000 /* SchoolApps.IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15D188C00000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8166750000000000000000 /* Default-568h@2x.png in Resources */,
+				3B4CF0D00000000000000000 /* schoolapp_logo.png in Resources */,
+				1375332A0000000000000000 /* Root.plist in Resources */,
+				FA14B0400000000000000000 /* Info.plist in Resources */,
+				133257A20000000000000000 /* Entitlements.plist in Resources */,
+				16C364400000000000000000 /* LoginViewController.xib in Resources */,
+				1A5470DE0000000000000000 /* RegisterUserViewController.xib in Resources */,
+				16F6475C0000000000000000 /* ForgotPasswordViewControlelr.xib in Resources */,
+				1A8753FA0000000000000000 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26BE71900000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313F36400000000000000000 /* AppDelegate.h in Sources */,
+				6A5000200000000000000000 /* AppDelegate.m in Sources */,
+				A360CA000000000000000000 /* LoginViewController.h in Sources */,
+				DC7193E00000000000000000 /* LoginViewController.m in Sources */,
+				115825DC0000000000000000 /* RegisterUserViewController.h in Sources */,
+				14E9327A0000000000000000 /* RegisterUserViewController.m in Sources */,
+				187A3F180000000000000000 /* ForgotPasswordViewControlelr.h in Sources */,
+				1C0B4BB60000000000000000 /* ForgotPasswordViewControlelr.m in Sources */,
+				1F9C58540000000000000000 /* HomeViewController.h in Sources */,
+				232D64F20000000000000000 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FCF3B700000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		2360480E0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "SchoolApps.IOS";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D58B3830000000000000000 /* Build configuration list for PBXProject "SchoolApps.IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCF3B700000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		7FF209600000000000000000 /* Build configuration list for PBXNativeTarget "SchoolApps.IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2360480E0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B4E2AA00000000000000000 /* Project object */;
+}

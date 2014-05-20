@@ -1,0 +1,30 @@
+# Version: 7.2.2.2 (db4427f)
+# [first argument, ignore] # /Users/mohdzulhilmimohdzain/Projects/SchoolAppsIOS/SchoolApps.IOS/bin/iPhone/Release/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolAppsIOS/SchoolApps.IOS/obj/iPhone/Release/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-dev \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolAppsIOS/SchoolApps.IOS/bin/iPhone/Release/SchoolAppsIOS.app \
+	-r \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/bin/Release/SchoolApps.CoreLib.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/mohdzulhilmimohdzain/Downloads/lib/android/Newtonsoft.Json.dll \
+	-linksdkonly \
+	-sdk \
+	7.1 \
+	-targetver \
+	6.0 \
+	--abi=armv7 \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolAppsIOS/SchoolApps.IOS/bin/iPhone/Release/SchoolAppsIOS.exe \

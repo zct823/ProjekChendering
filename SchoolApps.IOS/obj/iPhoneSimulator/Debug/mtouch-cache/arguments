@@ -1,0 +1,31 @@
+# Version: 7.2.2.2 (db4427f)
+# [first argument, ignore] # /Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/bin/iPhoneSimulator/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/bin/iPhoneSimulator/Debug/SchoolAppsIOS.app \
+	-r \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/bin/Debug/SchoolApps.CoreLib.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/mohdzulhilmimohdzain/Downloads/lib/android/Newtonsoft.Json.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	7.1 \
+	-targetver \
+	5.0 \
+	--abi=i386 \
+	/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/bin/iPhoneSimulator/Debug/SchoolAppsIOS.exe \

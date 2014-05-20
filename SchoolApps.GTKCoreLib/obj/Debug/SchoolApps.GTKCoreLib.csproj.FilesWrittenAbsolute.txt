@@ -1,0 +1,7 @@
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/obj/Debug/SchoolApps.GTKCoreLib.gtk-gui.gui.stetic
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/bin/Debug/SchoolApps.GTKCoreLib.exe.mdb
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/bin/Debug/SchoolApps.GTKCoreLib.exe
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/obj/Debug/SchoolApps.GTKCoreLib.exe
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/obj/Debug/SchoolApps.GTKCoreLib.exe.mdb
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.GTKCoreLib/bin/Debug/Newtonsoft.Json.dll

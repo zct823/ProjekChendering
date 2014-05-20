@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.ingeniworks.SchoolApps">
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+  <supports-screen android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+  <permission android:name="com.ingeniworks.SchoolApps.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="com.ingeniworks.SchoolApps.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <application android:label="SchoolApps" android:icon="@drawable/ic_launcher" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:label="SchoolApps" android:theme="@style/Theme.HoloLight.RemovedTitle" android:name="schoolapps.MainActivity">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RETRY" />
+      </intent-filter>
+    </activity>
+    <activity android:noHistory="true" android:theme="@style/Theme.SplashScreen" android:name="schoolapps.SplashScreen" />
+    <activity android:label="@string/app_subname" android:theme="@style/Theme.Schoolapp.NoNativeTitleBar" android:name="schoolapps.MainMenu" />
+    <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="schoolapps.GcmBroadcastReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.ingeniworks.SchoolApps" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.ingeniworks.SchoolApps" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.gcm.intent.RETRY" />
+        <category android:name="com.ingeniworks.SchoolApps" />
+      </intent-filter>
+    </receiver>
+    <service android:name="schoolapps.PushHandlerService" />
+    <activity android:icon="@drawable/ic_launcher" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.MainMenuDrawer" />
+    <activity android:label="Feedback" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.FeedbackForm" />
+    <activity android:label="General Info" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.GenMsgContantDetails" />
+    <activity android:label="EntranceToMain" android:theme="@style/Theme.HoloLight.RemovedTitle" android:name="schoolapps.EntranceToMain" />
+    <activity android:label="Message Details" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.PrivMsgContentDetails" />
+    <activity android:label="Events" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.EventsContentDetails" />
+    <activity android:label="Sign Up" android:theme="@style/Theme.HoloLight.RemovedTitle" android:name="schoolapps.LoginUserRegistration" />
+    <activity android:label="Forgot Password" android:theme="@style/Theme.HoloLight.RemovedTitle" android:name="schoolapps.LoginResetPass" />
+    <activity android:label="Compose Message" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.ComposeMsgActivity" />
+    <activity android:label="Select the Receiver" android:name="schoolapps.ComposeMsgAddressee" />
+    <activity android:label="Reset Password" android:theme="@style/Theme.HoloLight.RemovedTitle" android:name="schoolapps.SettingsResetPassActivity" />
+    <activity android:label="Messages" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.MessagesActivity" />
+    <activity android:label="Profile" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.ProfileActivity" />
+    <activity android:label="School Info" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.SchoolInfoActivity" />
+    <activity android:label="Settings" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.SettingsActivity" />
+    <activity android:label="Feedback" android:theme="@style/Theme.Schoolapp" android:name="schoolapps.FeedbackActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.ingeniworks.SchoolApps.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.ingeniworks.SchoolApps" />
+      </intent-filter>
+    </receiver>
+    <activity android:noHistory="true" android:theme="@style/Mono.Android.Theme.Splash" android:name="com.ingeniworks.schoolapps.TrialSplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/ic_launcher" android:theme="@style/Mono.Android.Theme.Splash" android:name="com.ingeniworks.schoolapps.TrialSplashScreen_" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+  <permission android:name="com.ingeniworks.SchoolApps.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.ingeniworks.SchoolApps.permission.C2D_MESSAGE" />
+</manifest>

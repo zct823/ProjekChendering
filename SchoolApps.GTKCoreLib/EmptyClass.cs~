@@ -1,0 +1,20 @@
+﻿using System;
+using System.Net;
+using System.Collections.Generic;
+
+namespace SchoolApps.GTKCoreLib
+{
+	public class EmptyClass
+	{
+		public EmptyClass ()
+		{
+		}
+
+		public void emptyClass ()
+		{
+
+		}
+
+	}
+}
+

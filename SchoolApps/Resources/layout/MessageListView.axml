@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minHeight="70dp"
+    p1:layout_width="match_parent"
+    p1:layout_height="70dp"
+    p1:id="@+id/rlMsgListView">
+    <ImageView
+        p1:src="@drawable/u39_normal"
+        p1:layout_width="40dp"
+        p1:layout_height="37dp"
+        p1:id="@+id/ivMsgIcon"
+        p1:layout_marginLeft="15dp"
+        p1:layout_marginTop="15dp" />
+    <TextView
+        p1:text="Lorem Ipsum Dolor Sit Amet"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/ivMsgIcon"
+        p1:id="@+id/tvMsgTitle"
+        p1:layout_marginTop="8dp"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginRight="10dp"
+        p1:textSize="16dp"
+        p1:textStyle="bold"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="Message from Lorem Ipsum"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tvMsgTitle"
+        p1:id="@+id/tvMsgSender"
+        p1:layout_toRightOf="@id/ivMsgIcon"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="2dp"
+        p1:layout_marginRight="10dp"
+        p1:textStyle="italic"
+        p1:textSize="12dp"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="at 2010-04-12 12:00:00"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tvMsgSender"
+        p1:id="@+id/tvMsgSentDateTime"
+        p1:layout_toRightOf="@id/ivMsgIcon"
+        p1:layout_marginLeft="10dp"
+        p1:textSize="12dp"
+        p1:textStyle="italic"
+        p1:layout_marginTop="0dp"
+        p1:textColor="#ff000000" />
+</RelativeLayout>

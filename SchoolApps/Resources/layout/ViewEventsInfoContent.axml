@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/rlPrivMsg"
+    p1:background="#ffffffff">
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvEventsInfoTitle"
+        p1:layout_marginLeft="20dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000"
+        p1:text="Lorem Ipsum Birthday"
+        p1:textSize="18dp" />
+    <TextView
+        p1:text="@string/ed_label_eventStarts"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@+id/tvEventsInfoTitle"
+        p1:id="@+id/tvEventsInfoStartLabel"
+        p1:layout_marginLeft="23dp"
+        p1:textColor="#ff000000"
+        p1:layout_marginTop="10dp" />
+    <TextView
+        p1:text="@string/ed_label_eventEnds"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@+id/tvEventsInfoStartLabel"
+        p1:id="@+id/tvEventsInfoEndLabel"
+        p1:layout_toRightOf="@id/tvEventsInfoEndLabel"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_below="@+id/tvEventsInfoEndLabel"
+        p1:id="@+id/rlGenMsgContent"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginRight="5dp"
+        p1:layout_marginLeft="5dp"
+        p1:layout_marginBottom="5dp">
+        <WebView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/wvEventsInfoContent" />
+    </RelativeLayout>
+    <TextView
+        p1:text="2014-04-15 12:00:00"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@+id/tvEventsInfoStart"
+        p1:id="@+id/tvEventsInfoEnd"
+        p1:layout_toRightOf="@id/tvEventsInfoEndLabel"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="Lorem Ipsum Dolor Sit Amet"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@+id/tvEventsInfoStartLabel"
+        p1:id="@+id/tvEventsInfoStart"
+        p1:layout_below="@id/tvEventsInfoTitle"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+</RelativeLayout>

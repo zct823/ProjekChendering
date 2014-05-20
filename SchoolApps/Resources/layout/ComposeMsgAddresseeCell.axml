@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/tableLayout1">
+    <TableRow
+        p1:id="@+id/trComposeMsgAddresseeC"
+        p1:minHeight="60dp">
+        <TextView
+            p1:text="1 Lorem Ipsum"
+            p1:layout_column="0"
+            p1:id="@+id/tvComposeMsgAddresseeC"
+            p1:layout_width="match_parent"
+            p1:layout_weight="1"
+            p1:layout_marginLeft="10dp"
+            p1:layout_gravity="center" />
+        <CheckBox
+            p1:layout_column="1"
+            p1:id="@+id/cbComposeMsgAddresseeC"
+            p1:layout_gravity="center" />
+    </TableRow>
+</TableLayout>

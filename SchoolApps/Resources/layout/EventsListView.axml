@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minHeight="70dp"
+    p1:layout_width="match_parent"
+    p1:layout_height="70dp"
+    p1:id="@+id/rlEventListView">
+    <ImageView
+        p1:src="@drawable/u13_normal"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/ivEventsIcon"
+        p1:layout_marginLeft="20dp"
+        p1:scaleType="center"
+        p1:layout_marginTop="22dp" />
+    <TextView
+        p1:text="Events from Lorem Ipsum"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/ivEventsIcon"
+        p1:id="@+id/tvEventsTitle"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:textSize="16dp"
+        p1:textStyle="bold"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="Start date"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/ivEventsIcon"
+        p1:id="@+id/tvEventsDate"
+        p1:layout_below="@id/tvEventsTitle"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="3dp"
+        p1:textStyle="italic"
+        p1:textColor="#ff000000" />
+</RelativeLayout>

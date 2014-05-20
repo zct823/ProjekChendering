@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:id="@+id/llResetPass">
+    <ImageView
+        android:src="@drawable/schoolapp_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ivResetPassAppLogo" />
+    <TextView
+        android:text="@string/settingsResetPass_Desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResetPassDesc"
+        android:textColor="#ff057acc"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSettingsResetPassNewPass"
+        android:hint="@string/settingsResetPass_NewPassHint"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSettingsResetPassConfirmPass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/settingsResetPass_ConfirmPassHint" />
+    <Button
+        android:text="@string/forgotPass_BtnResetPassSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btnResetPassSubmit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff057acc"
+        android:textColor="#ffffffff" />
+</LinearLayout>

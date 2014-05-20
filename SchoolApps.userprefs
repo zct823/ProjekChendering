@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SchoolApps.IOS/LoginViewController.cs">
+    <Files>
+      <File FileName="SchoolApps.GTKCoreLib/DatabaseAccess.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps.GTKCoreLib/Webservice.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps/EntranceToMain.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps/MainFragment.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps/FeedbackActivity.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps/MainMenu.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps/MessagesActivity.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps.IOS/LoginViewController.cs" Line="70" Column="4" />
+      <File FileName="SchoolApps.IOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps.IOS/RegisterUserViewController.cs" Line="29" Column="4" />
+      <File FileName="SchoolApps.IOS/Main.cs" Line="1" Column="1" />
+      <File FileName="SchoolApps.IOS/ForgotPasswordViewControlelr.cs" Line="28" Column="43" />
+      <File FileName="SchoolApps.IOS/HomeViewController.cs" Line="28" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SchoolApps.Droid MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" AndroidDeviceId-Release="MedfieldA3E82BC3" AndroidDeviceId-Debug="MedfieldA3E82BC3" />
+</Properties>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:padding="8dp"
+    android:id="@+id/rlGenMsgListView">
+    <ImageView
+        android:id="@+id/ivIconImage"
+        android:padding="5dp"
+        android:src="@drawable/Icon"
+        android:layout_width="54.8dp"
+        android:layout_height="47.0dp" />
+    <TextView
+        android:text="Lorem bin Ipsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivIconImage"
+        android:id="@+id/tvSenderName"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+    <TextView
+        android:text="@string/textTest"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvSenderName"
+        android:id="@+id/tvBriefDesc"
+        android:layout_toRightOf="@id/ivIconImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff000000" />
+    <TextView
+        android:text="@string/readMoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBriefDesc"
+        android:id="@+id/tvReadMore"
+        android:layout_toRightOf="@id/ivIconImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:textColor="#ff000000" />
+</RelativeLayout>

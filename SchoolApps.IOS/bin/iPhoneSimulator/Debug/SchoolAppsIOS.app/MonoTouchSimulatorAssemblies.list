@@ -1,0 +1,7 @@
+mscorlib.dll
+System.dll
+System.Core.dll
+Mono.Dynamic.Interpreter.dll
+System.Xml.dll
+Newtonsoft.Json.dll
+System.Runtime.Serialization.dll

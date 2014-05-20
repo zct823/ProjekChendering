@@ -1,0 +1,17 @@
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps/bin/Release/SchoolApps.dll
+/Users/mohdzulhilmimohdzain/Downloads/lib/android/Newtonsoft.Json.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/Components/sqlite-net-1.0.1/lib/android/SQLite.dll
+/Users/mohdzulhilmimohdzain/Downloads/GCM.Client-master/lib/Android/GCM.Client.dll
+/Users/mohdzulhilmimohdzain/Downloads/FlyOutMenu-master/FlyOutMenu/bin/Release/FlyOutMenu.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v4.0/Mono.Android.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Xml.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Mono.Security.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Core.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v4.0/Mono.Android.Support.v4.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Mono.Data.Sqlite.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Data.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Mono.Data.Tds.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Transactions.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Runtime.Serialization.dll

@@ -1,0 +1,6 @@
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/obj/Release/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/bin/Release/SchoolApps.CoreLib.dll.mdb
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/bin/Release/SchoolApps.CoreLib.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/obj/Release/SchoolApps.CoreLib.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/obj/Release/SchoolApps.CoreLib.dll.mdb
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.CoreLib/bin/Release/Newtonsoft.Json.dll

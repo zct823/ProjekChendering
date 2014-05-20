@@ -1,0 +1,7 @@
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/Newtonsoft.Json.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+/Users/mohdzulhilmimohdzain/Projects/SchoolApps/SchoolApps.IOS/obj/iPhone/Debug/mtouch-cache/Link/SchoolAppsIOS.exe

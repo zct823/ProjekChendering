@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/rlPrivMsg"
+    p1:background="#ffffffff">
+    <TextView
+        p1:text="@string/pmsg_label_from"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvPrivMsgFromLabel"
+        p1:layout_marginLeft="45dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="@string/pmsg_label_title"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tvPrivMsgFromLabel"
+        p1:id="@+id/tvPrivMsgTitleLabel"
+        p1:layout_marginLeft="30dp"
+        p1:textColor="#ff000000"
+        p1:layout_marginTop="10dp" />
+    <TextView
+        p1:text="@string/pmsg_label_sent"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tvPrivMsgTitleLabel"
+        p1:id="@+id/tvPrivMsgCreatedLabel"
+        p1:layout_toRightOf="@id/tvPrivMsgCreatedLabel"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_below="@id/tvPrivMsgCreatedLabel"
+        p1:id="@+id/rlGenMsgContent"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginRight="5dp"
+        p1:layout_marginLeft="5dp"
+        p1:layout_marginBottom="5dp">
+        <WebView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/wvPrivMsgContent" />
+    </RelativeLayout>
+    <TextView
+        p1:text="Lorem Ipsum"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/tvPrivMsgFromLabel"
+        p1:id="@+id/tvPrivMsgFrom"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="Lorem Ipsum Dolor Sit Amet"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/tvPrivMsgTitleLabel"
+        p1:id="@+id/tvPrivMsgTitle"
+        p1:layout_below="@id/tvPrivMsgFrom"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+    <TextView
+        p1:text="2014-04-15 12:00:00"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/tvPrivMsgTitle"
+        p1:id="@+id/tvPrivMsgCreatedOn"
+        p1:layout_toRightOf="@id/tvPrivMsgCreatedLabel"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:textColor="#ff000000" />
+</RelativeLayout>
